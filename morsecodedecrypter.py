@@ -1,5 +1,4 @@
 '''
-VARIABLE KEY
 'cipher' -> 'stores the morse translated form of the english string'
 'decipher' -> 'stores the english translated form of the morse string'
 'citext' -> 'stores morse code of a single character'
@@ -7,7 +6,7 @@ VARIABLE KEY
 'message' -> 'stores the string to be encoded or decoded'
 '''
  
-# Dictionary
+
 MORSE_CODE_DICT = { 'A':'.-', 'B':'-...',
                     'C':'-.-.', 'D':'-..', 'E':'.',
                     'F':'..-.', 'G':'--.', 'H':'....',
@@ -32,8 +31,6 @@ def encrypt(message):
  
             # Looks up the dictionary and adds the
             # correspponding morse code
-            # along with a space to separate
-            # morse codes for different characters
             cipher += MORSE_CODE_DICT[letter] + ' '
         else:
             # 1 space indicates different characters
@@ -75,7 +72,7 @@ def decrypt(message):
                 decipher += ' '
             else:
  
-                # accessing the keys using their values (reverse of encryption)
+                # accessing the keys using their values
                 decipher += list(MORSE_CODE_DICT.keys())[list(MORSE_CODE_DICT
                 .values()).index(citext)]
                 citext = ''
