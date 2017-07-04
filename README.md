@@ -1,2 +1,2 @@
-# Enigma-
-MorseCode decrypter that encrypts a message that we hard code and gives u the output in dots and dash . 
+# Enigma-..-
+MorseCode decrypter that encrypts a message that we hard code and gives u the output in dots and dash . Character and word spacing is the utmost important thing to look at . When u give a code of a letter in the word u provide a ' ' after it for the next character and then after the completion of the word u provide '  ' two spaces . While decryption , u start by giving one extra space at the end and keep on moving back towards the initial letters to decrypt the word . 
